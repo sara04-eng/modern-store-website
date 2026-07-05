@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MODERN STORE — Modern Living, Curated</title>
+  <meta name="description" content="MODERN STORE — a curated store experience with glass cards, ambient video, and a modern audio player." />
+
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+
+      <!-- Logo (left side) -->
+      <a href="#top" class="logo" aria-label="Modern Store home">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">MODERN STORE</span>
+      </a>
+
+      <!-- Navigation Bar (5 required links) -->
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#top" class="nav-link">Home</a></li>
+          <li><a href="#glass-section" class="nav-link">About</a></li>
+          <li><a href="#video-section" class="nav-link">Store</a></li>
+          <li><a href="#map-section" class="nav-link">Locations</a></li>
+          <li><a href="#audio-section" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right-side controls: search + theme toggle -->
+      <div class="header-controls">
+
+        <!-- Search Icon + expandable input -->
+        <div class="search-wrap">
+          <button class="icon-btn" id="searchToggle" aria-label="Open search" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <input type="search" id="searchInput" class="search-input" placeholder="Search products..."aria-label="Search" />
+        </div>
+
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode" aria-pressed="false">
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-icon sun">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><circle cx="12" cy="12" r="5"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></g></svg>
+            </span>
+            <span class="theme-toggle-icon moon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+            </span>
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- SECTION 1 — Glass Card Hover Effects -->
+
+    <section class="glass-section" id="glass-section">
+      <div class="section-inner">
+    <p class="eyebrow">Featured Collection</p>
+       <h2 class="section-title">Modern Essentials for Every Home</h2>
+<p class="section-lead">
+Explore four carefully selected products designed for modern living.
+</p>
+        <div class="glass-grid">
+
+          <article class="glass-card">
+            <div class="glass-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2h12l2 6-8 12L4 8z"/><path d="M4 8h16M9 2l-2 6 5 12 5-12-2-6"/></svg>
+            </div>
+         <h3>Crystal Water Carafe</h3>
+Elegant handcrafted glass pitcher perfect for serving water and refreshing drinks.
+            <span class="glass-card-price">$68</span>
+          </article>
+
+          <article class="glass-card">
+            <div class="glass-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+         <h3>Lavender Scented Candle</h3>
+Premium soy candle with a relaxing lavender scent for a cozy atmosphere.
+            <span class="glass-card-price">$34</span>
+          </article>
+
+          <article class="glass-card">
+            <div class="glass-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+           <h3>Wooden Organizer Tray</h3>
+Stylish wooden tray designed to organize keys, wallets, watches, and daily essentials.
+            <span class="glass-card-price">$52</span>
+          </article>
+
+          <article class="glass-card">
+            <div class="glass-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg>
+            </div>
+           <h3>Halo Planter</h3>
+Minimal ceramic planter designed for indoor plants with a clean modern look.
+            <span class="glass-card-price">$46</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — Video Background -->
+  
+    <section class="video-section" id="video-section">
+      <video class="video-bg" autoplay muted loop playsinline poster="">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-a-warm-cup-of-coffee-on-a-wooden-table-4809-large.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <div class="video-overlay">
+        <p class="eyebrow eyebrow-light">Featured Space</p>
+      <h2 class="video-heading">
+Create a Home You'll Love
+</h2>
+Discover timeless furniture and décor that bring comfort, elegance, and simplicity to every room.
+        <a href="#glass-section" class="btn-outline">Explore Collection</a>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — Modern Audio Player -->
+    
+    <section class="audio-section" id="audio-section">
+      <div class="section-inner audio-inner">
+       <p class="eyebrow">
+Relax & Listen
+</p>
+       <h2 class="section-title">
+Enjoy Our Background Playlist
+</h2>
+
+        <div class="audio-player" id="audioPlayer">
+          <div class="audio-art" aria-hidden="true">
+            <div class="audio-bars">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="audio-info">
+            <h3 class="audio-title">Morning Breeze</h3>
+            <p class="audio-artist">Instrumental Collection</p>
+
+            <div class="audio-progress-row">
+              <span class="audio-time" id="currentTime">0:00</span>
+              <input type="range" class="audio-progress" id="progressBar" value="0" min="0" max="100" step="0.1" aria-label="Seek">
+              <span class="audio-time" id="duration">0:00</span>
+            </div>
+
+            <div class="audio-controls">
+              <button class="audio-btn" id="rewindBtn" aria-label="Rewind 10 seconds">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M11 5V1L4 7l7 6V9c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H3c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+              </button>
+              <button class="audio-btn audio-btn-play" id="playBtn" aria-label="Play">
+                <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="pauseIcon" viewBox="0 0 24 24" fill="currentColor" width="22" height="22" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+              </button>
+              <button class="audio-btn" id="forwardBtn" aria-label="Forward 10 seconds">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13 5V1l7 6-7 6V9c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <audio id="audioElement" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="metadata"></audio>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <!-- FOOTER — Map section only -->
+
+  <footer class="map-footer" id="map-section">
+    <div class="map-wrap">
+     <iframe
+  title="MODERN STORE - City Mall, Amman"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.292923407196!2d35.839237324563285!3d31.980073874006862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca185283dfb89%3A0x611dda32fcd10faa!2z2LPZitiq2Yog2YXZiNmE!5e0!3m2!1sar!2sjo!4v1783283403448!5m2!1sar!2sjo"
+  width="100%"
+  height="100%"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
